@@ -46,7 +46,6 @@ export class App extends Component {
 					<ProtectedRoute exact path="/project/:id?" component={AddEditProject}  />
 					<ProtectedRoute exact path="/setup/:id" component={SetupGuide}  />
 					<ProtectedRoute exact path="/tips/:id" component={Tips}  />
-					<Route exact path="/technologies" component={TechStack}  />
 				</Switch>
 				<AppFooter></AppFooter>
 			</div>
