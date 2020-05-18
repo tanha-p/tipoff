@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tags matches snapshot 1`] = `
+<div>
+  <span>
+    <span
+      className="tag dark-tag"
+      style={
+        Object {
+          "margin": "5px",
+        }
+      }
+    >
+      tag-1
+    </span>
+    <span
+      className="tag dark-tag"
+      style={
+        Object {
+          "margin": "5px",
+        }
+      }
+    >
+      tag-2
+    </span>
+    <span
+      className="tag dark-tag"
+      style={
+        Object {
+          "margin": "5px",
+        }
+      }
+    >
+      tag-3
+    </span>
+  </span>
+</div>
+`;

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BrowserIcon matches snapshot 1`] = `
+<span>
+  <span
+    className="icon"
+    title="Chrome:79"
+  >
+    <i
+      aria-hidden="true"
+      className="fab fa-chrome"
+    />
+  </span>
+</span>
+`;

@@ -1,0 +1,28 @@
+.card.project-tile{
+    background-color: #fff;
+}
+.project-tile-header{
+    background-color: #e1f4f3;
+    color:#333 !important;
+}
+
+.view-tips, .view-tips .icon{
+    color:#fff !important;
+    /*background-color: #DAFAE6;*/
+    background-color: #333;
+}
+.tag.project-tag{
+    margin-right:1em;
+    margin-top:.5em;
+    background-color: #ddd ;
+}
+.card-footer-item{
+    cursor: pointer;
+}
+.project-help-guide{
+    background-color: #ddd;
+}
+
+.project-tile-content {
+    background-color: #fff !important;
+}

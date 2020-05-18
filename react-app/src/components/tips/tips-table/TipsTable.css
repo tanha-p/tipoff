@@ -1,0 +1,28 @@
+#tips-table thead {
+    background-color: #e1f4f3;
+
+}
+
+#tips-table tbody{
+    background-color: #ffffff;
+}
+
+.error{
+    background-color: rgb(230, 188, 152) !important;
+}
+
+.warning{
+    background-color: #f3f3b6  !important;
+}
+
+.success {
+    background-color:rgb(204, 233, 178)  !important;
+}
+
+.unhandled {
+    background-color:rgb(202, 136, 136)  !important;
+}
+
+.info {
+    background-color:#a7c6d3  !important;
+}

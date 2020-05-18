@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tips Component matches snapshot 1`] = `
+<div
+  className="content"
+>
+  <h1
+    className="title is-2 pageTitle"
+  >
+    Project1
+  </h1>
+  <div
+    className="content"
+  >
+    <table
+      className="table is-bordered is-narrow is-striped"
+      id="tips-table"
+    >
+      <thead>
+        <tr
+          className="header-row"
+        >
+          <th>
+            Event Type
+          </th>
+          <th>
+            Created On
+          </th>
+          <th>
+            Event Title
+          </th>
+          <th>
+            Tags
+          </th>
+          <th>
+            User Agent
+          </th>
+          <th>
+            User ID
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          className="tip-row info"
+        >
+          <td>
+            info
+          </td>
+          <td>
+            <time
+              dateTime={"2019-12-29T18:07:40.409Z"}
+            >
+              a month ago
+            </time>
+          </td>
+          <td>
+            Fetching news with page 2
+          </td>
+          <td>
+            <div>
+              <span>
+                <span
+                  className="tag dark-tag"
+                  style={
+                    Object {
+                      "margin": "5px",
+                    }
+                  }
+                >
+                  jobs
+                </span>
+                <span
+                  className="tag dark-tag"
+                  style={
+                    Object {
+                      "margin": "5px",
+                    }
+                  }
+                >
+                  news
+                </span>
+                <span
+                  className="tag dark-tag"
+                  style={
+                    Object {
+                      "margin": "5px",
+                    }
+                  }
+                >
+                  resources
+                </span>
+              </span>
+            </div>
+             
+          </td>
+          <td>
+            <span>
+              <span>
+                <span
+                  className="icon"
+                  title="Firefox:68"
+                >
+                  <i
+                    aria-hidden="true"
+                    className="fab fa-firefox"
+                  />
+                </span>
+              </span>
+              <span>
+                <span
+                  className="icon"
+                  title="Windows:10"
+                >
+                  <i
+                    aria-hidden="true"
+                    className="fab fa-windows"
+                  />
+                </span>
+              </span>
+              <span>
+                <span
+                  className="icon"
+                >
+                  <i
+                    aria-hidden="true"
+                    className="fas fa-laptop"
+                  />
+                </span>
+              </span>
+            </span>
+          </td>
+          <td>
+            Yessenia.Jenkins@gmail.com
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;

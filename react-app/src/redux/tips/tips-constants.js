@@ -1,0 +1,4 @@
+export const SET_TIPS = 'SET_TIPS';
+export const SET_TIPS_SEARCHTERM = 'SET_TIPS_SEARCHTERM';
+export const INCREMENT_TIPS_PAGE_NO = 'INCREMENT_TIPS_PAGE_NO';
+export const SET_PAGE_NO = 'SET_PAGE_NO';

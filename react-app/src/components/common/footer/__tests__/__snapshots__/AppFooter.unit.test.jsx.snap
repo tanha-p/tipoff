@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppFooter matches snapshot 1`] = `
+<footer
+  className="footer"
+  id="footer"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="content"
+    >
+      <div
+        className="columns"
+      >
+        <div
+          className="column has-text-black"
+        >
+          <p>
+            Made with
+            <span
+              className="icon"
+            >
+              <i
+                aria-hidden="true"
+                className="has-text-danger fas fa-heart"
+              />
+            </span>
+            by 
+            <a
+              href="https://github.com/terrifictaps"
+              target="_new"
+            >
+              <span
+                className="icon"
+              >
+                <i
+                  aria-hidden="true"
+                  className="fab fa-github"
+                />
+              </span>
+               terrifictaps
+            </a>
+             with 
+            <a
+              href="/technologies"
+            >
+              these
+            </a>
+             awesome tools
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+`;

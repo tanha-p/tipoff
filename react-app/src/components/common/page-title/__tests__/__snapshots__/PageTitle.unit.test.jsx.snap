@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageTitle matches snapshot 1`] = `
+<h1
+  className="title is-2 pageTitle"
+>
+  Tips
+</h1>
+`;

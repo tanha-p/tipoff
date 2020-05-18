@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component matches snapshot 1`] = `
+<div>
+  <div
+    className="box login-box"
+  >
+    <div>
+      <div
+        className="notification is-danger is-hidden tipoff-notification"
+      >
+        <span />
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              name="userId"
+              onChange={[Function]}
+              placeholder="Email"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              name="password"
+              onChange={[Function]}
+              placeholder="Password"
+              type="password"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      className="button is-large is-fullwidth login-btn"
+      onClick={[Function]}
+      type="button"
+    >
+      <label
+        className="label has-text-white"
+      >
+        Login 
+        <span
+          className="icon"
+          style={
+            Object {
+              "marginLeft": ".1em",
+            }
+          }
+        >
+          <i
+            aria-hidden="true"
+            className="fas fa-sign-in-alt"
+          />
+        </span>
+      </label>
+    </button>
+  </div>
+</div>
+`;

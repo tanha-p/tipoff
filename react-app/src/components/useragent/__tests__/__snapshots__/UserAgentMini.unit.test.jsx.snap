@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserAgentMini matches snapshot 1`] = `
+<span>
+  <span>
+    <span
+      className="icon"
+      title="Chrome:79"
+    >
+      <i
+        aria-hidden="true"
+        className="fab fa-chrome"
+      />
+    </span>
+  </span>
+  <span>
+    <span
+      className="icon"
+      title="Windows:10"
+    >
+      <i
+        aria-hidden="true"
+        className="fab fa-windows"
+      />
+    </span>
+  </span>
+  <span>
+    <span
+      className="icon"
+    >
+      <i
+        aria-hidden="true"
+        className="fas fa-laptop"
+      />
+    </span>
+  </span>
+</span>
+`;

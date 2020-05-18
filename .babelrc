@@ -1,0 +1,12 @@
+{
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+        "istanbul",
+        "@babel/plugin-proposal-class-properties",
+        "@babel/plugin-syntax-bigint",
+        "@babel/plugin-proposal-numeric-separator"
+    ]
+      
+  }

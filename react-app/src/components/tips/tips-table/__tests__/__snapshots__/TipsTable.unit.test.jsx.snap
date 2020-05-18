@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TipsTable matches snapshot 1`] = `
+<div
+  className="content"
+>
+  <table
+    className="table is-bordered is-narrow is-striped"
+    id="tips-table"
+  >
+    <thead>
+      <tr
+        className="header-row"
+      >
+        <th>
+          Event Type
+        </th>
+        <th>
+          Created On
+        </th>
+        <th>
+          Event Title
+        </th>
+        <th>
+          Tags
+        </th>
+        <th>
+          User Agent
+        </th>
+        <th>
+          User ID
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td
+          colSpan="6"
+        >
+          No Tips yet.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;

@@ -1,0 +1,35 @@
+.logo {
+    font-size: 2em;
+    font-weight: 900;
+    color:#e1f4f3 !important;
+    margin-left:1em;
+    cursor:pointer;
+}
+
+.logo-text {
+    font-size: 1.8em;
+    font-weight: 700;
+    color:#e1f4f3 !important;
+    cursor:pointer;
+}
+
+.user-name{
+    color:#e1f4f3 !important;
+}
+
+.header {
+    background-color:#333333 !important;
+    color:#e1f4f3 !important;
+}
+
+.user-name .fas {
+    color:#e1f4f3 !important;
+}
+
+.navbar-burger{
+    background-color: #333;
+}
+
+.navbar-burger span{
+    color: #fff;
+}

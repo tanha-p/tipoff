@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OsIcon matches snapshot 1`] = `
+<span>
+  <span
+    className="icon"
+    title="Windows:10"
+  >
+    <i
+      aria-hidden="true"
+      className="fab fa-windows"
+    />
+  </span>
+</span>
+`;

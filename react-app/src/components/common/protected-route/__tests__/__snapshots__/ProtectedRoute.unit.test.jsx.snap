@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProtectedRoute matches snapshot 1`] = `
+<div>
+  <div
+    className="container is-fluid"
+    id="app-container"
+  >
+    <div
+      style={
+        Object {
+          "padding": "20px",
+        }
+      }
+    >
+      <h1
+        className="title is-2 pageTitle"
+      />
+    </div>
+  </div>
+</div>
+`;
