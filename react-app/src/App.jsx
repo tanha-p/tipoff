@@ -15,7 +15,6 @@ import auth from './service/auth-svc';
 import {setCurrentUser} from './redux/user/user-actions';
 import {selectCurrentUser} from './redux/user/user-selectors';
 import Header from './components/common/header/Header';
-import TechStack from './components/tech-stack/TechStack';
 
 import './App.css';
 
