@@ -1,0 +1,39 @@
+{
+    "name": "Tipoff",
+    "description": "An open source front-end monitoring platform",
+    "repository": "https://github.com/tanha-p/tipoff",
+    "logo": "https://www.tipoff.dev/tipoff_logo.png",
+    "keywords": ["tipoff","node","mern","react", "express","productivity","open-source"],
+    "env": {
+        "JWT_SECRET_KEY": {
+            "description": "A secret key used to encrypt the passwords",
+            "required": true,
+            "value": ""
+        },
+        "MONGODB_URI": {
+            "description": "URL of the mongoDB database connection to store the Tips",
+            "required": true,
+            "value": ""
+        },
+        "NODE_ENV": {
+            "description": "Environment variable for node",
+            "required": true,
+            "value": "production"
+        },
+        "NOTIFIER_API_KEY_SENDGRID": {
+            "description": "SendGrid API key to send emails",
+            "required": true,
+            "value": ""
+        },
+        "NOTIFIER_FROM_EMAIL_SENDGRID": {
+            "description": "'from' email address that is verified on SendGrid and can be used to send Tip email notifications",
+            "required": true,
+            "value": ""
+        },
+        "REACT_APP_FONT_AWESOME_ID": {
+            "description": "Font awesome Kit ID available at https://fontawesome.com/start",
+            "required": true,
+            "value": ""
+        }
+    }
+  }
