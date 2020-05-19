@@ -95,7 +95,7 @@ export default function ProjectTile({project}) {
                     </CardFooterItem>
                     ) : (<></>)}
                     <CardFooterItem onClick={(e) => {navigateToTips(project)}} className="view-tips">
-                        <Icon className='fas fa-paper-plane' /> Tips
+                        <Icon className='fas fa-align-justify' /> Tips
                     </CardFooterItem>
                 </React.Fragment>
             </CardFooter>
