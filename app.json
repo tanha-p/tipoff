@@ -11,7 +11,7 @@
             "value": ""
         },
         "MONGODB_URI": {
-            "description": "URL of the mongoDB database connection to store the Tips",
+            "description": "URL of the mongoDB database connection to store the Tips. If you don't already have mongoDB, you can get it for free at https://www.mongodb.com/cloud/atlas ",
             "required": true,
             "value": ""
         },
@@ -21,17 +21,17 @@
             "value": "production"
         },
         "NOTIFIER_API_KEY_SENDGRID": {
-            "description": "SendGrid API key to send emails",
+            "description": "SendGrid API key to send emails. Key can be generated using a free plan here https://sendgrid.com/pricing/",
             "required": true,
             "value": ""
         },
         "NOTIFIER_FROM_EMAIL_SENDGRID": {
-            "description": "'from' email address that is verified on SendGrid and can be used to send Tip email notifications",
+            "description": "'from' email address that is *verified* on SendGrid and can be used to send Tip email notifications",
             "required": true,
             "value": ""
         },
         "REACT_APP_FONT_AWESOME_ID": {
-            "description": "Font awesome Kit ID available at https://fontawesome.com/start",
+            "description": "Font awesome Kit ID available for a free plan at https://fontawesome.com/start",
             "required": true,
             "value": ""
         }
