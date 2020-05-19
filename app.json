@@ -2,7 +2,7 @@
     "name": "Tipoff",
     "description": "An open source front-end monitoring platform",
     "repository": "https://github.com/tanha-p/tipoff",
-    "logo": "https://www.tipoff.dev/tipoff_logo.png",
+    "logo": "https://www.tipoff.dev/logo.png",
     "keywords": ["tipoff","node","mern","react", "express","productivity","open-source"],
     "env": {
         "JWT_SECRET_KEY": {
