@@ -7,7 +7,7 @@ import {
     Columns,
     Column,
     Box,
-    Title
+    Icon
 } from 'bloomer';
 
 import PageTitle from '../../common/page-title/PageTitle';
@@ -67,10 +67,8 @@ export default function Projects() {
                 }
                 {/* Create new Project Tile */}
                 <Column isSize='1/3'  >
-                    <Box className="create-project-content" onClick={navigateToAddProject}>
-                        <Title hasTextAlign="centered">Create</Title>
-                        <Title hasTextAlign="centered">New</Title>
-                        <Title hasTextAlign="centered">Project</Title>
+                    <Box style={{position:"relative"}}  className="create-project-content" onClick={navigateToAddProject}>
+                        <Icon style={{position:"absolute", top:"50%", left:"50%", translate:"transform -50% -50%", fontSize:"5em"}} className="fas fa-plus" />
                     </Box>  
                 </Column>
             </Columns>
