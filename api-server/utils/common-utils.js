@@ -14,20 +14,23 @@ export default class CommonUtils {
     }
 
     static logInfo(log,data,requestId = "reqidnotfound"){
+        let msg = `${requestId} - ${data}`;
         if(log && log.isInfoEnabled()){
-            log.info(data);
+            log.info(msg);
         }
     }
 
     static logDebug(log,data,requestId = "reqidnotfound"){
+        let msg = `${requestId} - ${data}`;
         if(log && log.isDebugEnabled()){
-            log.debug(data);
+            log.debug(msg);
         }
     }
 
     static logError(log,error,requestId = "reqidnotfound"){
+        let msg = error ? `${requestId} - ${error.message}` : '';
         if(log){
-            log.error(error ? error.message : '',error);
+            log.error(msg,error);
         }
     }
 
