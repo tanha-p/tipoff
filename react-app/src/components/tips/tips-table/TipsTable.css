@@ -7,6 +7,10 @@
     background-color: #ffffff;
 }
 
+.view-tip-icon {
+    text-align: center !important;
+}
+
 .error{
     background-color: rgb(230, 188, 152) !important;
 }
@@ -26,3 +30,4 @@
 .info {
     background-color:#a7c6d3  !important;
 }
+

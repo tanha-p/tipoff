@@ -39,11 +39,11 @@ const TipsTable = ({tips}) => {
                                 onClick={(e)=>{viewTip(e, tip.tip_id)}}
                                 style={{cursor:"pointer"}}>
                             <td className="is-hidden-touch">{tip.event_type}</td>
-                            <td><UserAgentMini ua={tip.user_agent}></UserAgentMini></td>
+                            <td><UserAgentMini ua={tip.user_agent} ></UserAgentMini></td>
                             <td>{tip.event_title}</td>
                             <td className="is-hidden-touch"><Tags tags={tip.tags} ></Tags> </td>
                             <td><Moment fromNow>{tip.created_on}</Moment></td>
-                            <td className="is-hidden-touch"><Icon className='fas fa-paper-plane' /></td>
+                            <td className="is-hidden-touch view-tip-icon" ><Icon className='fas fa-file-alt' /></td>
                         </tr>
                     )}
                     </tbody>
