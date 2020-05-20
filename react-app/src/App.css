@@ -6,3 +6,7 @@ body{
 .info-icon{
   background-color: #e1f4f3 !important;
 }
+
+.columns {
+  border-bottom: none;
+}
