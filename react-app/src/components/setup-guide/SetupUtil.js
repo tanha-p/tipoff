@@ -82,7 +82,7 @@ export const getSendTipParameterList = () => {
             name : "user",
             required : "No",
             searchable : "Partially",
-            desc : `This can be used to pass the user object associated with the event. Passing user.user_id as a unique identifier is highly recommended when passing user object if passing the user object.
+            desc : `This can be used to pass the user object associated with the event. Passing user.user_id as a unique identifier is highly recommended when passing user object.
                    user_id field is searchable. Rest of the user object is not searchable and can be used to search all the Tips triggerred by the user_id.` 
         },
         {
