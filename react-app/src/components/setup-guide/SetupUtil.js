@@ -22,7 +22,8 @@ export const addTipVerboseExampleCode = () => {
         user_id : getLoggedInUserID(),
         //rest of the user object
     },
-    callback : myFunc //optional 
+    callback : myFunc //optional,
+    captureScreenshot : true //optional
 };
 Tipoff.sendTip(tip); //or window.Tipoff.sendTip(tip) if your linter complains about global variable`;
 }
