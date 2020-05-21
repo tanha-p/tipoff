@@ -61,5 +61,10 @@
 			"text",
 			"text-summary"
 		]
+	},
+	"apidoc": {
+		"title" : "Tipoff API Docs",
+		"version": "0.0.1-rc1",
+		"description": "API documentation for Tipoff Add Tip API"
 	}
 }
