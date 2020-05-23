@@ -96,8 +96,12 @@ var Tipoff = (function() {
                 }
             }
             if(captureScreenshot) {
-                window.html2canvas(document.body).then(function(canvas) {
-                    tip.screenshot = canvas.toDataURL();;
+                window.html2canvas(document.body, {
+                    allowTaint: true,
+                    foreignObjectRendering: true,
+                    height: document.querySelector("body").scrollHeight
+                }).then(function(canvas) {
+                    tip.screenshot = canvas.toDataURL();
                     sendAjaxReq(tip, callback);
                 });
             }else {
