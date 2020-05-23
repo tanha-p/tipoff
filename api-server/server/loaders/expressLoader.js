@@ -50,7 +50,7 @@ export default async () => {
 	app.use(helmet.contentSecurityPolicy({
 		directives: {
 			defaultSrc: ["'self'", 'cdnjs.cloudflare.com'], //TODO remove external dependency
-			imgSrc: ["'self'",'https:'],
+			imgSrc: ["'self'",'https:', 'data:'],
 			scriptSrc: ["'self'", "'unsafe-inline'", 'cdnjs.cloudflare.com'],
 			styleSrc: ["'self'","'unsafe-inline'",'use.fontawesome.com'],
 			fontSrc: ["'self'", 'cdnjs.cloudflare.com'],
