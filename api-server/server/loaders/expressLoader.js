@@ -52,7 +52,7 @@ export default async () => {
 			defaultSrc: ["'self'", 'cdnjs.cloudflare.com'], //TODO remove external dependency
 			imgSrc: ["'self'",'https:'],
 			scriptSrc: ["'self'", "'unsafe-inline'", 'cdnjs.cloudflare.com'],
-			styleSrc: ["'self'",'use.fontawesome.com'],
+			styleSrc: ["'self'","'unsafe-inline'",'use.fontawesome.com'],
 			fontSrc: ["'self'", 'cdnjs.cloudflare.com'],
 			reportUri: '/report-csp-violation',
 			upgradeInsecureRequests: true,
