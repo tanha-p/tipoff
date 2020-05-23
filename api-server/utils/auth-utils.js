@@ -52,10 +52,9 @@ export async function validateOriginForProject(req, res, next) {
                         throw e;
                     });
                 if (project && project.projectId === projectId) {
-                    console.log(project.origins);
                     if (project.origins && project.origins.length > 0) {
-                        console.log(project.origins)
-                        if (project.origins.includes(origin)) {
+                        let host = req.get('host')
+                        if (project.origins.includes(origin) || origin.indexOf(host) >=0) {
                             res.header('Access-Control-Allow-Origin', origin);
                             next(); //found matching origin
                         } else {
