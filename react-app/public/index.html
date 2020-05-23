@@ -16,12 +16,16 @@
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <!-- Place your kit's code here -->
-    <script src="https://kit.fontawesome.com/%REACT_APP_FONT_AWESOME_ID%.js" crossorigin="anonymous"></script>
-    <script src="/tipoff-client.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
+    <script>
+      FontAwesome.config.autoAddCss = false;
+    </script>
+    <link href="https://use.fontawesome.com/releases/v5.13.0/css/svg-with-js.css" rel="stylesheet" />
+    <script src="/html2canvas.min.js"></script>
+    <script src="/tipoff-client.js"></script>
     <title>Tipoff</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
       This HTML file is a template.

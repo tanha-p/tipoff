@@ -49,19 +49,21 @@ export default async () => {
 	//define content security policy (CSP) here
 	app.use(helmet.contentSecurityPolicy({
 		directives: {
-			defaultSrc: ["'self'", 'kit.fontawesome.com'], //TODO remove external dependency
+			defaultSrc: ["'self'", 'cdnjs.cloudflare.com'], //TODO remove external dependency
 			imgSrc: ["'self'",'https:'],
-			scriptSrc: ["'self'", "'unsafe-inline'", 'kit.fontawesome.com'],
-			styleSrc: ["'self'", 'kit-free.fontawesome.com'],
-			fontSrc: ["'self'", 'kit-free.fontawesome.com'],
+			scriptSrc: ["'self'", "'unsafe-inline'", 'cdnjs.cloudflare.com'],
+			styleSrc: ["'self'",'use.fontawesome.com'],
+			fontSrc: ["'self'", 'cdnjs.cloudflare.com'],
 			reportUri: '/report-csp-violation',
 			upgradeInsecureRequests: true,
 			workerSrc: false  // This is not set.
-		}
+		},
+		loose: true
 	}));
 	
 	//Route to report csp violations defined above
 	app.post('/report-csp-violation', (req, res) => {
+		console.log(req)
 		if (req.body) {
 			log.error('CSP Violation: ', req.body);
 		} else {

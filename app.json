@@ -29,11 +29,6 @@
             "description": "'from' email address that is *verified* on SendGrid and can be used to send Tip email notifications",
             "required": true,
             "value": ""
-        },
-        "REACT_APP_FONT_AWESOME_ID": {
-            "description": "Font awesome Kit ID available for a free plan at https://fontawesome.com/start",
-            "required": true,
-            "value": ""
         }
     }
   }
