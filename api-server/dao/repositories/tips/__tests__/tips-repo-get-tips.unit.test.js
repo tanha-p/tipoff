@@ -49,7 +49,15 @@ describe('Tip repo -> Get Tips Test', () => {
 		expect(tipModelLimitStub.calledWith(10)).to.be.true;
 		expect(tipModelSkipStub.calledWith(0)).to.be.true;
 		expect(tipModelSelectStub
-			.calledWith({_id:0, __v:0, event_stack:0, 'user._id':0})).to.be.true;
+			.calledWith({_id:0, 
+                __v:0, 
+                event_stack:0, 
+                screenshot:0, 
+                referer: 0,
+                note: 0,
+                user:0,
+                notifiers:0
+            })).to.be.true;
 		expect(tips).to.eq(fakeTips);
 		expect(tipModelSortStub.calledImmediatelyAfter(tipModelStub)).to.be.true;
 		expect(tipModelLimitStub.calledImmediatelyAfter(tipModelSortStub)).to.be.true;
