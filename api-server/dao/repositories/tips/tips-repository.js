@@ -26,7 +26,15 @@ export default class TipsRepo  {
             .sort({ created_on : -1 })
             .limit(Number(items))
             .skip(Number(skip))
-            .select({_id:0, __v:0, event_stack:0, 'user._id':0}) //TODO fix the user._id projection
+            .select({_id:0, 
+                __v:0, 
+                event_stack:0, 
+                screenshot:0, 
+                referer: 0,
+                note: 0,
+                user:0,
+                notifiers:0
+            }) 
             .catch(error => { throw error; });
         CommonUtils.logFunctionExitInDebug(this.log, `returning ${tips.length} tips`, reqId);
         return tips;
