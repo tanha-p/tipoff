@@ -20,6 +20,7 @@
     ***************************************************************************** */
 
 var Tipoff = (function() {
+
     var _setup = function(projectId, url) {
         if(!projectId || projectId.length===0) {
             console.log('Tipoff setup is invalid. Valid projectId is required. Tips will not be sent.');
@@ -32,7 +33,8 @@ var Tipoff = (function() {
         this.projectId = projectId;
         this.url = url;
     }
-    var sendAjaxReq = function (tip, callback) {
+
+    var _sendAjaxReq = function (tip, callback) {
         //Send XMLHTTPRequest
         var x = new(window.XMLHttpRequest || window.ActiveXObject)('MSXML2.XMLHTTP.3.0');
         x.open('POST', Tipoff.url, 1);
@@ -43,6 +45,19 @@ var Tipoff = (function() {
         };
         x.send(JSON.stringify(tip));
     }
+    
+    var scaleCanvas = function(originalCanvas,width) {
+        var canvas = document.createElement('canvas');
+        var octx = canvas.getContext('2d');
+        var scale = width/originalCanvas.width;
+        canvas.width = scale*originalCanvas.width;
+        canvas.height = scale*originalCanvas.height;
+        octx.scale(scale,scale);
+        octx.drawImage(originalCanvas, 0, 0);
+        return canvas.toDataURL();
+    }
+      
+
     var _sendTip = function (argObj) {
         try {
             if(!this.projectId || this.projectId.length===0 || !this.url || this.url.length===0) {
@@ -71,7 +86,6 @@ var Tipoff = (function() {
             var callback = argObj.callback;
             var captureScreenshot = argObj.captureScreenshot ? argObj.captureScreenshot : false;
 
-            
             var tip = {
                 projectId : this.projectId,
                 eventType: eventType,
@@ -101,11 +115,11 @@ var Tipoff = (function() {
                     foreignObjectRendering: true,
                     height: document.querySelector("body").scrollHeight
                 }).then(function(canvas) {
-                    tip.screenshot = canvas.toDataURL();
-                    sendAjaxReq(tip, callback);
+                    tip.screenshot = LZString.compressToUTF16(scaleCanvas(canvas,1080));
+                    _sendAjaxReq(tip, callback);
                 });
             }else {
-                sendAjaxReq(tip, callback);
+                _sendAjaxReq(tip, callback);
             }
         } catch (e) {
             console.log(e)

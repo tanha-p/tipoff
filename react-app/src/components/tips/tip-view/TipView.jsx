@@ -23,6 +23,8 @@ import HighlightCode from '../../common/highlight-code/Highlight';
 import '../tips-table/TipsTable.css';
 import './TipView.css';
 
+import LZString from 'lz-string';
+
 export default function TipView() {
     const match = useRouteMatch();
 
@@ -170,7 +172,7 @@ export default function TipView() {
                                         <Tile isChild>
                                             <Title isSize="5">Screenshot</Title>
                                             <Box className="screenshot">
-                                                <img src={tip.screenshot}  alt="sceenshot"/>
+                                                <img src={LZString.decompressFromUTF16(tip.screenshot)}  alt="sceenshot"/>
                                             </Box>
                                         </Tile>
                                         }  
