@@ -29,7 +29,7 @@ exports[`AppFooter matches snapshot 1`] = `
             </span>
             by 
             <a
-              href="https://github.com/terrifictaps"
+              href="https://github.com/tanha-p"
               target="_new"
             >
               <span
@@ -40,15 +40,15 @@ exports[`AppFooter matches snapshot 1`] = `
                   className="fab fa-github"
                 />
               </span>
-               terrifictaps
+               tanha-p
             </a>
-             with 
+             and these 
             <a
-              href="/technologies"
+              href="https://stackshare.io/tipoff/tipoff"
+              target="_new"
             >
-              these
+              awesome techs
             </a>
-             awesome tools
           </p>
         </div>
       </div>
