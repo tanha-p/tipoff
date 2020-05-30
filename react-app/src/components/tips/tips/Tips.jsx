@@ -20,7 +20,7 @@ import TipsLoadMore from '../tips-load-more/TipsLoadMore';
 
 import './Tips.css';
 
-const Tips = () =>  {
+export const Tips = () =>  {
 	//declare all the hooks
 	const match = useRouteMatch();
 	const dispatch = useDispatch();

@@ -1,21 +1,30 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import {mount} from 'enzyme';
+import { Provider } from 'react-redux'
+import configureStore from 'redux-mock-store';
+import { mount} from 'enzyme';
 
-import {Header} from '../Header';
+import Header from '../Header';
 
 describe("Header", () => {
-    const props = {
-        userSignOut: () => {},
-        currentUser: {
-            authenticated: true,
-            name: 'Test Test'
-        }
-    }
-    const wrapper = mount(<Header {...props} />);
+    let store,initialState, wrapper;
+
+    beforeEach (()=>{
+        initialState = {
+            user: { 
+                currentUser: {
+                    authenticated: true,
+                    name: 'Test Test'
+                }
+            }
+        }   
+        const mockStore = configureStore();
+        store = mockStore(initialState);
+        wrapper = mount(<Provider store={store}><Header /></Provider>);
+    });
 
     it("matches snapshot", () => {
-        const snap = renderer.create(<Header {...props}  />).toJSON();
+        const snap = renderer.create(<Provider store={store}><Header /></Provider>).toJSON();
         expect(snap).toMatchSnapshot();
     });
 
@@ -28,7 +37,7 @@ describe("Header", () => {
     });
 
     it("it renders username as passed in props", () => {
-        expect(wrapper.find('NavbarItem').find('.user-name').last().find('span').last().text()).toEqual(props.currentUser.name);
+        expect(wrapper.find('NavbarItem').find('.user-name').last().find('span').last().text()).toEqual(initialState.user.currentUser.name);
     });
 
     it("it renders NavBar properly ", () => {

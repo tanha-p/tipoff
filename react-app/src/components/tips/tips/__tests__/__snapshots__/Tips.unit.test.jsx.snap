@@ -7,92 +7,248 @@ exports[`Tips Component matches snapshot 1`] = `
   <h1
     className="title is-2 pageTitle"
   >
-    Project1
+    test
   </h1>
+  <div
+    style={
+      Object {
+        "marginBottom": "1em",
+      }
+    }
+  >
+    <div
+      className="field has-addons has-addons-right is-flex"
+    >
+      <div
+        className="control"
+      >
+        <button
+          className="button info-icon"
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            className="icon"
+          >
+            <i
+              aria-hidden="true"
+              className="fas fa-info"
+            />
+          </span>
+        </button>
+      </div>
+      <div
+        className="control has-icons-left has-icons-right"
+      >
+        <span
+          className="icon"
+        >
+          <i
+            aria-hidden="true"
+            className="fas fa-search"
+          />
+        </span>
+        <input
+          className="input"
+          onChange={[Function]}
+          placeholder="Search Tips"
+          type="text"
+        />
+      </div>
+      <div
+        className="control"
+      >
+        <button
+          className="button is-dark"
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            className="is-hidden-touch"
+          >
+            Search
+          </span>
+          <span
+            className="is-hidden-desktop"
+          >
+            <span
+              className="icon"
+            >
+              <i
+                aria-hidden="true"
+                className="fas fa-search"
+              />
+            </span>
+          </span>
+        </button>
+      </div>
+    </div>
+    <div
+      className="modal"
+    >
+      <div
+        className="modal-background"
+      />
+      <div
+        className="modal-card"
+      >
+        <header
+          className="modal-card-head"
+        >
+          <h1
+            className="modal-card-title"
+          >
+            <span
+              className="icon"
+              style={
+                Object {
+                  "paddingRight": ".5em",
+                }
+              }
+            >
+              <i
+                aria-hidden="true"
+                className="fas fa-info"
+              />
+            </span>
+            Tips Search
+          </h1>
+        </header>
+        <section
+          className="modal-card-body"
+        >
+          <div
+            className="box"
+          >
+            <div>
+              Tips search is a "text" search that searches for tips that match the following event fields.
+            </div>
+            <span
+              className="tag dark-tag"
+            >
+              Event Type
+            </span>
+            <span
+              className="tag dark-tag"
+            >
+              Event Title
+            </span>
+            <span
+              className="tag dark-tag"
+            >
+              Tags
+            </span>
+            <span
+              className="tag dark-tag"
+            >
+              Referer
+            </span>
+            <span
+              className="tag dark-tag"
+            >
+              Browser (Name, Version, Major)
+            </span>
+            <span
+              className="tag dark-tag"
+            >
+              Engine (Name, Version)
+            </span>
+            <span
+              className="tag dark-tag"
+            >
+              OS (Name, Version, Architecture)
+            </span>
+            <span
+              className="tag dark-tag"
+            >
+              Device (Type, Model, Vendor)
+            </span>
+            <span
+              className="tag dark-tag"
+            >
+              Note
+            </span>
+            <span
+              className="tag dark-tag"
+            >
+              Stack Trace
+            </span>
+          </div>
+          <div
+            className="box"
+          >
+            To search for tips that match the 
+            <i>
+              Exact search term
+            </i>
+            , use double quotes. e.g. "Chrome", "unhandled" etc.
+          </div>
+        </section>
+        <footer
+          className="modal-card-foot"
+        >
+          <button
+            className="button is-dark"
+            onClick={[Function]}
+            type="button"
+          >
+            OK
+          </button>
+        </footer>
+      </div>
+    </div>
+  </div>
   <div
     className="content"
   >
     <table
-      className="table is-bordered is-narrow is-striped"
+      className="table is-bordered is-striped"
       id="tips-table"
     >
       <thead>
         <tr
           className="header-row"
         >
-          <th>
+          <th
+            className="is-hidden-touch"
+          >
             Event Type
           </th>
           <th>
-            Created On
+            UA
           </th>
           <th>
             Event Title
           </th>
-          <th>
+          <th
+            className="is-hidden-touch"
+          >
             Tags
           </th>
           <th>
-            User Agent
+            Created On
           </th>
-          <th>
-            User ID
+          <th
+            className="is-hidden-touch"
+          >
+            View
           </th>
         </tr>
       </thead>
       <tbody>
         <tr
           className="tip-row info"
+          onClick={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
         >
-          <td>
+          <td
+            className="is-hidden-touch"
+          >
             info
-          </td>
-          <td>
-            <time
-              dateTime={"2019-12-29T18:07:40.409Z"}
-            >
-              a month ago
-            </time>
-          </td>
-          <td>
-            Fetching news with page 2
-          </td>
-          <td>
-            <div>
-              <span>
-                <span
-                  className="tag dark-tag"
-                  style={
-                    Object {
-                      "margin": "5px",
-                    }
-                  }
-                >
-                  jobs
-                </span>
-                <span
-                  className="tag dark-tag"
-                  style={
-                    Object {
-                      "margin": "5px",
-                    }
-                  }
-                >
-                  news
-                </span>
-                <span
-                  className="tag dark-tag"
-                  style={
-                    Object {
-                      "margin": "5px",
-                    }
-                  }
-                >
-                  resources
-                </span>
-              </span>
-            </div>
-             
           </td>
           <td>
             <span>
@@ -131,11 +287,67 @@ exports[`Tips Component matches snapshot 1`] = `
             </span>
           </td>
           <td>
-            Yessenia.Jenkins@gmail.com
+            Fetching news with page 2
+          </td>
+          <td
+            className="is-hidden-touch"
+          >
+            <span
+              className="tag dark-tag"
+            >
+              jobs
+            </span>
+            <span
+              className="tag dark-tag"
+            >
+              news
+            </span>
+            <span
+              className="tag dark-tag"
+            >
+              resources
+            </span>
+             
+          </td>
+          <td>
+            <time
+              dateTime={"2019-12-29T18:07:40.409Z"}
+            >
+              5 months ago
+            </time>
+          </td>
+          <td
+            className="is-hidden-touch view-tip-icon"
+          >
+            <span
+              className="icon"
+            >
+              <i
+                aria-hidden="true"
+                className="fas fa-file-alt"
+              />
+            </span>
           </td>
         </tr>
       </tbody>
     </table>
+  </div>
+  <div>
+    <div
+      className="columns is-centered"
+    >
+      <div
+        className="column is-full has-text-centered"
+      >
+        <button
+          className="button is-dark"
+          onClick={[Function]}
+          type="button"
+        >
+          Load More Tips
+        </button>
+      </div>
+    </div>
   </div>
 </div>
 `;

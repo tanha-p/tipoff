@@ -17,7 +17,7 @@ import FormError from '../../form-error/FormError';
 import auth from '../../../../service/auth-svc';
 import {setCurrentUser} from '../../../../redux/user/user-actions';
 
-const LoginForm = () => {
+export const LoginForm = () => {
     const dispatch = useDispatch();
     const history = useHistory();
     const [form, setForm] = useState({

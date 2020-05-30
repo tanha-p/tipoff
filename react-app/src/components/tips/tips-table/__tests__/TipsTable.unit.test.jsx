@@ -36,12 +36,12 @@ describe("TipsTable", () => {
             return col.html()
         });
         expect(firstRowColumns.length).toEqual(6);
-        expect(cols[0]).toEqual(`<td>${mockTips[0].event_type}</td>`);
-        expect(cols[1]).toContain('<time');
+        expect(cols[0]).toContain(`${mockTips[0].event_type}`);
+        expect(cols[1]).toContain('icon');
         expect(cols[2]).toEqual(`<td>${mockTips[0].event_title}</td>`);
         expect(cols[3]).toContain(`tag`);
-        expect(cols[4]).toContain(`icon`);
-        expect(cols[5]).toEqual(`<td>${mockTips[0].user.user_id}</td>`);
+        expect(cols[4]).toContain(`time`);
+        expect(cols[5]).toContain(`fa-file-alt`);
         
     });
 });  

@@ -1,30 +1,25 @@
 import React from 'react';
-import {shallow} from 'enzyme';
+import { Provider } from 'react-redux'
+import configureStore from 'redux-mock-store';
+import { mount} from 'enzyme';
 import axios from 'axios';
 import renderer from 'react-test-renderer';
 
-
 import {Tips}  from '../Tips';
-import TipsTable from '../../tips-table/TipsTable';
 
 const mockTips = {
     data: {  
         success: true,
         data: [{
-        
-            "project_id" : "IotWorx",
+            "project_id" : "ckat454uq00050nwddaqp5aaq",
             "event_type" : "info",
             "event_title" : "Fetching news with page 2",
             "created_on" : "2019-12-29T18:07:40.409Z",
-            "note" : "Bedfordshire Small",
             "tags" : [
                     "jobs",
                     "news",
                     "resources"
             ],
-            "user" : {
-                    "user_id" : "Yessenia.Jenkins@gmail.com"
-            },
             "user_agent" : {
                     "ua" : "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:68.0) Gecko/20100101 Firefox/68.0",
                     "browser" : {
@@ -50,41 +45,57 @@ const mockTips = {
     }
 };
 
+jest.mock('react-router-dom', () => ({
+    __esModule: true,
+    useRouteMatch:jest.fn().mockReturnValue({
+        params : {
+            id : 'ckat454uq00050nwddaqp5aaq'
+        }
+    }),
+    useHistory :jest.fn().mockReturnValue([]),
+    useLocation: jest.fn().mockReturnValue({
+      pathname: '/app',
+      search: '',
+      hash: '',
+      state: {
+          projectName: 'test'
+      },
+      key: '5nvxpbdafa',
+    }),
+  }));
+
 
 describe("Tips Component", () => {
 
-    const tipsState = {
-        tips: mockTips.data.data,
-        page: 1,
-        items: 100
-    }
+    let store,initialState, wrapper;
 
-    const setTips = () => {}
-
-    beforeEach(() => {
-        axios.get.mockImplementationOnce(() =>
-            Promise.resolve(mockTips)
-        );
-    });
-
-    afterEach(() => {
-        jest.restoreAllMocks();
+    beforeEach (()=>{
+        initialState = {
+            tipsState: {
+                tips: mockTips.data.data,
+                page: 1,
+                items: 100
+            }
+        }   
+        const mockStore = configureStore();
+        store = mockStore(initialState);
+        wrapper = mount(<Provider store={store}><Tips/></Provider>);
+       
     });
 
     it("matches snapshot", () => {
-        const tree = renderer.create(<Tips tipsState={tipsState} setTips={setTips} />).toJSON();
+        const tree = renderer.create(<Provider store={store}><Tips/></Provider>).toJSON();
         expect(tree).toMatchSnapshot();
     });
 
     it('calls `getTips` function', async (done) => {
-        const tips = shallow (<Tips tipsState={tipsState} setTips={setTips}/>);
-        tips.instance().componentDidMount().then(() => {
-            expect(axios.get).toHaveBeenCalled();
-            expect(tips.find('PageTitle').length).toEqual(1);
-            expect(tips.find('TipsTable').length).toEqual(1);
-            expect(tips.find('TipsTable').props().tips).toEqual(mockTips.data.data);
+        
+            
+            expect(wrapper.find('PageTitle').length).toEqual(1);
+            expect(wrapper.find('TipsTable').length).toEqual(1);
+            expect(wrapper.find('TipsTable').props().tips).toEqual(mockTips.data.data);
             done();
-        });
+       
     });
 
 });
