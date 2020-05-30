@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header matches snapshot 1`] = `
+exports[`Header logged in user view matches snapshot 1`] = `
 <nav
   className="navbar header"
 >
@@ -59,6 +59,101 @@ exports[`Header matches snapshot 1`] = `
           
         <span>
           Test Test
+        </span>
+      </div>
+      <div
+        className="navbar-item"
+      >
+        <div
+          className="field is-grouped"
+        >
+          <div
+            className="control"
+          >
+            <button
+              className="button sign-out-btn"
+              onClick={[Function]}
+              type="button"
+            >
+              <span
+                className="icon"
+              >
+                <i
+                  aria-hidden="true"
+                  className="fas fa-power-off"
+                />
+              </span>
+              <span>
+                Sign Out
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+`;
+
+exports[`Header user is not logged in view matches snapshot 1`] = `
+<nav
+  className="navbar header"
+>
+  <div
+    className="navbar-brand"
+  >
+    <div
+      className="navbar-item logo"
+      onClick={[Function]}
+    >
+      <span
+        className="icon"
+      >
+        <i
+          aria-hidden="true"
+          className="fas fa-dove"
+        />
+      </span>
+    </div>
+    <div
+      className="navbar-item logo-text"
+      onClick={[Function]}
+    >
+      Tipoff
+    </div>
+    <div
+      className="navbar-burger is-hidden"
+      onClick={[Function]}
+    >
+      <span />
+      <span />
+      <span />
+    </div>
+  </div>
+  <div
+    className="navbar-menu is-hidden"
+    onClick={[Function]}
+  >
+    <div
+      className="navbar-start"
+    />
+    <div
+      className="navbar-end"
+    >
+      <div
+        className="navbar-item is-hidden-touch user-name"
+      >
+        <span
+          className="icon"
+        >
+          <i
+            aria-hidden="true"
+            className="fas fa-user"
+          />
+        </span>
+          
+        <span>
+          
         </span>
       </div>
       <div
