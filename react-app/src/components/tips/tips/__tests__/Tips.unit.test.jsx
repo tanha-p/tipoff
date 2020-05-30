@@ -2,7 +2,6 @@ import React from 'react';
 import { Provider } from 'react-redux'
 import configureStore from 'redux-mock-store';
 import { mount} from 'enzyme';
-import axios from 'axios';
 import renderer from 'react-test-renderer';
 
 import {Tips}  from '../Tips';
@@ -89,13 +88,10 @@ describe("Tips Component", () => {
     });
 
     it('calls `getTips` function', async (done) => {
-        
-            
             expect(wrapper.find('PageTitle').length).toEqual(1);
             expect(wrapper.find('TipsTable').length).toEqual(1);
             expect(wrapper.find('TipsTable').props().tips).toEqual(mockTips.data.data);
             done();
-       
     });
 
 });
