@@ -30,6 +30,7 @@ jobs:
       - save_cache:
           paths:
             - node_modules
+            - react-app/node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # run tests!
