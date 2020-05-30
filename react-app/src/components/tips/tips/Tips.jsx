@@ -53,9 +53,7 @@ export const Tips = () =>  {
 		}
 
 		const isShowMoreViewable = () => {
-			
 			let viewable = currentTips === maxTips ? true : false;
-			console.log(currentTips, maxTips, tips.length, viewable)
 			return viewable;
 		}
 
