@@ -9,6 +9,7 @@ exports[`Header matches snapshot 1`] = `
   >
     <div
       className="navbar-item logo"
+      onClick={[Function]}
     >
       <span
         className="icon"
@@ -21,6 +22,7 @@ exports[`Header matches snapshot 1`] = `
     </div>
     <div
       className="navbar-item logo-text"
+      onClick={[Function]}
     >
       Tipoff
     </div>

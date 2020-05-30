@@ -5,30 +5,36 @@ exports[`TipsTable matches snapshot 1`] = `
   className="content"
 >
   <table
-    className="table is-bordered is-narrow is-striped"
+    className="table is-bordered is-striped"
     id="tips-table"
   >
     <thead>
       <tr
         className="header-row"
       >
-        <th>
+        <th
+          className="is-hidden-touch"
+        >
           Event Type
         </th>
         <th>
-          Created On
+          UA
         </th>
         <th>
           Event Title
         </th>
-        <th>
+        <th
+          className="is-hidden-touch"
+        >
           Tags
         </th>
         <th>
-          User Agent
+          Created On
         </th>
-        <th>
-          User ID
+        <th
+          className="is-hidden-touch"
+        >
+          View
         </th>
       </tr>
     </thead>
@@ -37,7 +43,7 @@ exports[`TipsTable matches snapshot 1`] = `
         <td
           colSpan="6"
         >
-          No Tips yet.
+          This project hasn't received any Tips yet. You can refer to the Setup Guide to get started.
         </td>
       </tr>
     </tbody>
