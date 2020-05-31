@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormError doesn't have errors matches snapshot 1`] = `
+<div>
+  <div
+    className="notification is-danger is-hidden tipoff-notification"
+  >
+    <span />
+  </div>
+</div>
+`;
+
+exports[`FormError has errors matches snapshot 1`] = `
+<div>
+  <div
+    className="notification is-danger tipoff-notification"
+  >
+    <ul>
+      <li>
+        Error 1 occured
+      </li>
+      <li>
+        Error 2 occurred
+      </li>
+    </ul>
+  </div>
+</div>
+`;
