@@ -5,9 +5,9 @@
 	"scripts": {
 		"test": "NODE_ENV=testing mocha './api-server/**/*.test.js' --require esm --exit && cd react-app && react-scripts test",
 		"test-api-unit": "NODE_ENV=testing mocha './api-server/**/*.unit.test.js' --require esm --exit",
-		"test-api-integration": "NODE_ENV=testing mocha './api-server/**/*.int.test.js' --require esm --exit",
+		"test-api-integration": "NODE_ENV=testing mocha --require esm --exit",
 		"test-react-app": "cd react-app && npm install && npm test",
-		"test-coverage": "nyc --reporter=lcov  mocha --require @babel/core --require babel-polyfill './api-server/**/*.test.js' ",
+		"test-coverage": "nyc mocha --require @babel/core --require babel-polyfill './api-server/**/*.test.js' ",
 		"start": "node -r esm startup.js",
 		"debug": "nodemon -r esm --inspect-brk --inspect=0.0.0.0:9229 startup.js",
 		"heroku-postbuild": "cd react-app && npm install && npm run build"
@@ -59,6 +59,7 @@
 		"reporter": [
 			"html",
 			"lcov",
+			"lcovonly",
 			"text",
 			"text-summary"
 		]
