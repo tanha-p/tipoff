@@ -43,5 +43,5 @@ jobs:
       #report coverage
       - run: yarn test-coverage
       - coverage-reporter/send_report:
-          coverage-reports: '/coverage/lcov.info'
+          coverage-reports: './coverage/lcov.info'
           project-token: $CODACY_PROJECT_TOKEN
