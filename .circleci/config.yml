@@ -36,12 +36,11 @@ jobs:
             - react-app/node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      # run tests!
-      # - run: yarn test-api-unit
-      # - run: yarn test-api-integration
-      # - run: yarn test-react-app
-      #report coverage
+      # run tests and report coverage for api server
       - run: yarn test-coverage
       - coverage-reporter/send_report:
           coverage-reports: './coverage/lcov.info'
           project-token: $CODACY_PROJECT_TOKEN
+
+      # run tests for react-app
+      - run: yarn test-react-app
