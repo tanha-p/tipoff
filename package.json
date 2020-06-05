@@ -28,7 +28,7 @@
 		"helmet": "^3.22.0",
 		"express-validator": "^6.4.1",
 		"jsonwebtoken": "^8.5.1",
-		"log4js": "^6.1.0",
+		"log4js": "^6.2.1",
 		"mongoose": "^5.9.14",
 		"react-scripts": "3.4.0",
 		"ua-parser-js": "^0.7.21",
