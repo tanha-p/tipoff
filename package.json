@@ -23,7 +23,7 @@
 		"esm": "^3.2.25",
 		"express": "~4.17.1",
 		"express-mongo-sanitize": "^2.0.0",
-		"express-rate-limit": "^5.1.1",
+		"express-rate-limit": "^5.1.3",
 		"express-request-id": "^1.4.1",
 		"helmet": "^3.22.0",
 		"express-validator": "^6.4.1",
