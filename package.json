@@ -1,6 +1,7 @@
 {
 	"name": "tipoff",
 	"version": "0.0.0",
+	"author": "Tanha P (https://github.com/tanha-p)",
 	"private": true,
 	"scripts": {
 		"test": "NODE_ENV=testing mocha './api-server/**/*.test.js' --require esm --exit && cd react-app && react-scripts test",
@@ -11,6 +12,10 @@
 		"start": "node -r esm startup.js",
 		"debug": "nodemon -r esm --inspect-brk --inspect=0.0.0.0:9229 startup.js",
 		"heroku-postbuild": "cd react-app && npm install && npm run build"
+	},
+	"engines": {
+		"node": "12.14.0",
+		"npm": "6.13.6"
 	},
 	"dependencies": {
 		"@sendgrid/mail": "^7.1.0",
