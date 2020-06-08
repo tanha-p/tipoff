@@ -106,3 +106,4 @@ dist
 # TernJS port file
 .tern-port
 api-server/logs/access.log.-2020-01-05
+.DS_Store
