@@ -13,7 +13,7 @@
 		"heroku-postbuild": "cd react-app && npm install && npm run build"
 	},
 	"dependencies": {
-		"@sendgrid/mail": "^7.1.0",
+		"@sendgrid/mail": "^7.1.1",
 		"bcrypt": "^3.0.8",
 		"body-parser": "^1.19.0",
 		"cookie-parser": "^1.4.5",
