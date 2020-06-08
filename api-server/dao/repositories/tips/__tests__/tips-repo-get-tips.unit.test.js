@@ -94,6 +94,29 @@ describe('Tip repo -> Get Tips Test', () => {
 		expect(tipModelLimitStub.calledWith(2)).to.be.true;
 	});
 
+	it('`getTips` works as expected with searchTerm param', async () => {
+		const req = { searchTerm : 'mysearch', projectId : "fakeprojectid" }
+		await repo.getTips(req).catch(err => {
+			expect.fail();
+		});
+		expect(tipModelStub.calledWith({
+			project_id : req.projectId,
+			$text : { $search : req.searchTerm }
+		})).to.be.true;
+		
+	});
+
+	it('`getTips` throws error when projectId is not populated', async () => {
+		const req = { pageNo:4, items:2 }
+		await repo.getTips(req).then(resp => {
+			expect.fail();
+		}).catch(err => {
+			expect(err.message).to.eq('valid projectId is required to get the tips.')
+		});
+	});
+
+	
+
 	it('`getTips` throws error when model throws error', async () => {
 		tipModelStub.restore();
 		tipModelSelectStub = sinon.stub().rejects;
