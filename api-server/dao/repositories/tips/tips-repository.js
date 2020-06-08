@@ -14,7 +14,6 @@ export default class TipsRepo  {
         if(!projectId || projectId.length === 0) {
             throw new Error('valid projectId is required to get the tips.');
         }
-        console.log('after err')
         const skip = (pageNo-1) * items;
         let qry = {
             project_id : projectId
