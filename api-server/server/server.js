@@ -4,17 +4,18 @@ import log4js from 'log4js';
 
 import loaders from './loaders';
 import conf from'../conf/app-config.js';
+import {getAsciiArtLogo} from '../utils/ascii-art-util';
 import log4jsConfig from'../conf/log4js-config.js';
 
 log4js.configure(log4jsConfig);
 
 const log = log4js.getLogger("server");
 
+
 const server = async () => {
 	
-	log.info('Starting server...'); 
+	log.info(getAsciiArtLogo()); 
 	const start = process.hrtime.bigint(); //time in nanoseconds
-
 	var app = await loaders();
 
 	app.listen(conf.port , err => {
