@@ -39,7 +39,7 @@ export default async () => {
 	}));
 
 	// compress all responses
-	app.use(compression())
+	app.use(compression());
 
 	//setup incoming request rate
 	const apiLimiter = rateLimit({
