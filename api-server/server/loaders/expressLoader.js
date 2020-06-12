@@ -1,12 +1,12 @@
 import express from 'express';
 import addRequestId from 'express-request-id';
-import bodyParser from 'body-parser';
 import helmet from 'helmet';
 import path from 'path';
 import cookieParser from 'cookie-parser';
 import rateLimit from 'express-rate-limit';
 import router from '../../routes';
 import mongoSanitize from 'express-mongo-sanitize';
+import compression from 'compression';
 
 import log4js from 'log4js';
 var log = log4js.getLogger("expressLoader");
@@ -38,6 +38,9 @@ export default async () => {
 		replaceWith: '_'
 	}));
 
+	// compress all responses
+	app.use(compression())
+
 	//setup incoming request rate
 	const apiLimiter = rateLimit({
 		windowMs: 1 * 60 * 1000, // 1 minute
@@ -63,7 +66,6 @@ export default async () => {
 	
 	//Route to report csp violations defined above
 	app.post('/report-csp-violation', (req, res) => {
-		console.log(req)
 		if (req.body) {
 			log.error('CSP Violation: ', req.body);
 		} else {
