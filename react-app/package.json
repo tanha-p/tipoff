@@ -9,6 +9,7 @@
 		"axios": "^0.19.1",
 		"bloomer": "^0.6.5",
 		"bulma": "^0.8.0",
+		"gzipper": "^3.7.0",
 		"highlight.js": "^10.0.3",
 		"lz-string": "^1.4.4",
 		"moment": "^2.24.0",
@@ -26,7 +27,7 @@
 	},
 	"scripts": {
 		"start": "react-scripts start",
-		"build": "react-scripts build",
+		"build": "react-scripts build && gzipper --verbose ./build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject"
 	},
