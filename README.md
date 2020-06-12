@@ -6,7 +6,7 @@
 ## What
 Tipoff is an open source, flexible, private cloud or on-prem front-end monitoring platform that auto notifies the developers based on the preconfigured Tips it receives from the end-user browser.
 
-It is created using the MERN stack. You can visit the complete stack [here]([https://stackshare.io/tipoff/tipoff](https://stackshare.io/tipoff/tipoff)).
+It is created using the MERN stack. You can visit the complete stack [here](https://stackshare.io/tipoff/tipoff).
 
 ## Why
 Tipoff helps you identify and fix bugs faster. You **get notified in realtime** before your customers notify you.
