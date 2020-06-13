@@ -22,7 +22,11 @@ describe("TabContentRenderer", () => {
             },
             tab: 'login'
         };
-        initialState = {}   
+        initialState = {
+            nextPath :  {
+                nextPath: '/app'
+            }
+        }   
         const mockStore = configureStore();
         store = mockStore(initialState);
         wrapper = mount(
