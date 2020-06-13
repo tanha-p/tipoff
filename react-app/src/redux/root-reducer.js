@@ -3,12 +3,14 @@ import {combineReducers} from 'redux';
 import userReducer, {INITIAL_USER_STATE} from './user/user-reducer';
 import tipsReducer from './tips/tips-reducer';
 import projectsReducer from './projects/projects-reducer';
+import nextPathReducer from './next-path/next-path-reducer';
 import {USER_SIGN_OUT} from './user/user-constants';
 
 const appReducer = combineReducers({
     user:userReducer,
     tipsState:tipsReducer,
-    projectsState: projectsReducer
+    projectsState: projectsReducer,
+    nextPath: nextPathReducer
 });
 
 const rootReducer = (state, action) => {

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import { useDispatch } from 'react-redux'; 
+import { useDispatch, useSelector, shallowEqual } from 'react-redux'; 
 import axios from 'axios';
 import {
     Box,
@@ -16,10 +16,12 @@ import {
 import FormError from '../../form-error/FormError';
 import auth from '../../../../service/auth-svc';
 import {setCurrentUser} from '../../../../redux/user/user-actions';
+import {selectNextPath} from '../../../../redux/next-path/next-path-selectors';
 
 export const LoginForm = () => {
     const dispatch = useDispatch();
     const history = useHistory();
+    const path = useSelector(selectNextPath, shallowEqual);
     const [form, setForm] = useState({
         userId : '',
         password : '',
@@ -58,8 +60,9 @@ export const LoginForm = () => {
                 dispatch(setCurrentUser({
                     name: user.name,
                     authenticated: true
-                }))
-                history.push("/app");
+                }));
+                debugger;
+                history.push(path);
             })
         }
     }
