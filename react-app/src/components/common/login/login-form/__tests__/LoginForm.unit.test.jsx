@@ -11,7 +11,11 @@ describe("LoginForm", () => {
     let store,initialState, wrapper;
 
     beforeEach (()=>{
-        initialState = {}   
+        initialState = {
+            nextPath :  {
+                nextPath: '/app'
+            }
+        }   
         const mockStore = configureStore();
         store = mockStore(initialState);
         wrapper = mount(<Provider store={store}><LoginForm /></Provider>);
