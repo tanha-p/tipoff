@@ -15,7 +15,7 @@ describe("LoginForm", () => {
             nextPath :  {
                 nextPath: '/app'
             }
-        }   
+        };   
         const mockStore = configureStore();
         store = mockStore(initialState);
         wrapper = mount(<Provider store={store}><LoginForm /></Provider>);
