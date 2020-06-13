@@ -53,8 +53,8 @@ export const App = () => {
 			</Switch>
 			<AppFooter></AppFooter>
 		</div>
-	)
+	);
 	
-}
+};
 
 export default App;

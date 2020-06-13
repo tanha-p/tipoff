@@ -61,7 +61,6 @@ export const LoginForm = () => {
                     name: user.name,
                     authenticated: true
                 }));
-                debugger;
                 history.push(path);
             })
         }
