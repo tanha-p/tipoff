@@ -2,6 +2,12 @@
 ![Tipoff](https://www.tipoff.dev/tipoff_logo.png "Tipoff")
 
 [![CircleCI](https://circleci.com/gh/tanha-p/tipoff.svg?style=shield&circle-token=23f4783a253fd6663dc11c92af89dbb50f744915)](https://circleci.com/gh/tanha-p/tipoff)
+![GitHub](https://img.shields.io/github/license/tanha-p/tipoff)
+[![NPM version](https://img.shields.io/badge/npm-6.13.6-brightgreen.svg)](https://www.npmjs.com/)
+[![Node version](https://img.shields.io/badge/node-12.14.0-brightgreen.svg)](https://nodejs.org/)
+[![Express version](https://img.shields.io/badge/express-~4.17.1-brightgreen.svg)](https://expressjs.com/)
+[![React version](https://img.shields.io/badge/react-^16.12.0-brightgreen.svg)](https://reactjs.org/)
+[![Mongo version](https://img.shields.io/badge/mongoDB-4.2.2-brightgreen.svg)](https://www.mongodb.com/try/download/enterprise)
 
 ## What
 Tipoff is an open source, flexible, private cloud or on-prem front-end monitoring platform that auto notifies the developers based on the preconfigured Tips it receives from the end-user browser.
@@ -90,6 +96,7 @@ cd react-app
 npm install
 ```
 4. If your **TIPOFF_API_PORT** is different from 5000 then change it in the package.json of React App. If your port is 5000 then you can skip this step
+
 Find the following line in tipoff/react-app/package.json
 ```json
 "proxy":  "http://localhost:5000"
