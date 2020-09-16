@@ -37,7 +37,7 @@
 		"log4js": "^6.2.1",
 		"mongoose": "^5.9.15",
 		"react-scripts": "3.4.1",
-		"ua-parser-js": "^0.7.21",
+		"ua-parser-js": "^0.7.22",
 		"uglify-js": "^3.9.3"
 	},
 	"devDependencies": {
