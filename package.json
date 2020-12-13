@@ -35,9 +35,9 @@
 		"helmet": "^3.22.0",
 		"jsonwebtoken": "^8.5.1",
 		"log4js": "^6.2.1",
-		"mongoose": "^5.9.15",
+		"mongoose": "^5.11.7",
 		"react-scripts": "3.4.1",
-		"ua-parser-js": "^0.7.21",
+		"ua-parser-js": "^0.7.23",
 		"uglify-js": "^3.9.3"
 	},
 	"devDependencies": {
