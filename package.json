@@ -36,7 +36,7 @@
 		"jsonwebtoken": "^8.5.1",
 		"log4js": "^6.2.1",
 		"mongoose": "^5.9.15",
-		"react-scripts": "3.4.1",
+		"react-scripts": "4.0.0",
 		"ua-parser-js": "^0.7.21",
 		"uglify-js": "^3.9.3"
 	},
