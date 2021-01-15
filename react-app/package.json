@@ -16,7 +16,7 @@
 		"moment-timezone": "^0.5.31",
 		"react": "^16.12.0",
 		"react-dom": "^16.12.0",
-		"react-highlight": "^0.12.0",
+		"react-highlight": "^0.13.0",
 		"react-moment": "^0.9.7",
 		"react-redux": "^7.1.3",
 		"react-router-dom": "^5.1.2",
