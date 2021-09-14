@@ -6,7 +6,7 @@
 		"@testing-library/jest-dom": "^4.2.4",
 		"@testing-library/react": "^9.4.0",
 		"@testing-library/user-event": "^7.2.1",
-		"axios": "^0.19.1",
+		"axios": "^0.21.2",
 		"bloomer": "^0.6.5",
 		"bulma": "^0.8.0",
 		"gzipper": "^3.7.0",
